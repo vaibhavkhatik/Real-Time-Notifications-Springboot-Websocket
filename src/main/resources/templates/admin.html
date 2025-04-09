@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Enhanced Order Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header>
+    <h1>Admin - Order Management</h1>
+</header>
+
+<div id="actions">
+    <div class="action-button" onclick="sendUpdate('Order Received')">
+        <i class="fas fa-receipt"></i>
+        <span>Order Received</span>
+    </div>
+    <div class="action-button" onclick="sendUpdate('Order Prepared')">
+        <i class="fas fa-utensils"></i>
+        <span>Order Prepared</span>
+    </div>
+    <div class="action-button" onclick="sendUpdate('Order Dispatched')">
+        <i class="fas fa-truck"></i>
+        <span>Order Dispatched</span>
+    </div>
+    <div class="action-button" onclick="sendUpdate('Order Delivered')">
+        <i class="fas fa-check-circle"></i>
+        <span>Order Delivered</span>
+    </div>
+</div>
+
+<div id="notifications">
+    <h2 style="color: #00796b;">Order Status Notifications</h2>
+    <div id="status-messages"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

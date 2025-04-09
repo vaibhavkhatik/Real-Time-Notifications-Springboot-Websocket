@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client - Enhanced Order Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="client1.css">
+</head>
+<body>
+<header>
+    <h1>Client -  Order Tracker</h1>
+</header>
+
+<div class="container">
+    <h2 style="color: #56ab2f;">Order Status Notifications</h2>
+
+    <div class="tracker-grid">
+        <div class="tracker-step" id="step-received">
+            <i class="fas fa-receipt"></i>
+            <div class="label">Order Received</div>
+        </div>
+        <div class="tracker-step" id="step-prepared">
+            <i class="fas fa-utensils"></i>
+            <div class="label">Order Prepared</div>
+        </div>
+        <div class="tracker-step" id="step-dispatched">
+            <i class="fas fa-truck"></i>
+            <div class="label">Order Dispatched</div>
+        </div>
+        <div class="tracker-step" id="step-delivered">
+            <i class="fas fa-box"></i>
+            <div class="label">Order Delivered</div>
+        </div>
+    </div>
+
+    <div class="rating-container" id="rating-container">
+        <h3>Please rate your order</h3>
+        <div class="stars" id="rating-stars">
+            <i class="fas fa-star" data-value="1"></i>
+            <i class="fas fa-star" data-value="2"></i>
+            <i class="fas fa-star" data-value="3"></i>
+            <i class="fas fa-star" data-value="4"></i>
+            <i class="fas fa-star" data-value="5"></i>
+        </div>
+        <button class="submit-btn" id="submit-rating">Submit Rating</button>
+    </div>
+</div>
+
+<script src="client1.js"></script>
+</body>
+</html>
