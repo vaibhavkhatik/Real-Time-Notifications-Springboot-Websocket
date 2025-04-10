@@ -50,7 +50,7 @@ Follow the steps below to set up and run the application:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/18-RAJAT/Real-Time-Notifications-Springboot-Websocket.git
+   git clone https://github.com/vaibhavkhatik/Real-Time-Notifications-Springboot-Websocket.git
    cd Real-Time-Notifications-Springboot-Websocket
    ```
 2. Build the project:
@@ -93,24 +93,3 @@ Follow the steps below to set up and run the application:
 
 ---
 
-## File Structure
-
-```
-src/
-├── main/
-│   ├── java/
-│   │   └── com.rajat/
-│   │       ├── config/
-│   │       │   └── WebSocketConfig.java
-│   │       ├── controller/
-│   │       │   ├── NotificationController.java
-│   │       └── NotificationSystemApplication.java
-│   └── resources/
-│       ├── static/
-│       └── templates/
-│           ├── admin.css
-│           ├── admin.html
-│           ├── admin.js
-│           ├── client1.css
-│           ├── client1.html
-│           └── client1.js
